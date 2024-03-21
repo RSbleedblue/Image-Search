@@ -4,24 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script  src="https://kit.fontawesome.com/b3348ae33f.js" crossorigin="anonymous"></script>
     <title>Image Search</title>
 </head>
 <body style="background: url('assets/bgMain.jpg'); background-size: cover; background-position: fixed ">
-    <div class="flex flex-col">
-        <!-- Nav BaR -->
-        <div class=" flex p-10 w-full h-[150px] items-center gap-4 flex shadow-xl">
-            <h1 class="ml-[10%] text-3xl font-semibold rounded-lg text-gray-300" >FIND SPLASH</h1>
-            <p class="text-[30px] text-gray-300">|</p>
-            <div class="flex flex-col justify-center items-center text-gray-300 text-sm">
-                <p>
-                    Powered By
-                </p>
-                <p>
-                    Unsplash
-                </p>
+    <div class="flex flex-col items-center justify-center">
+        <!-- Nav BaR --> 
+        <div class="flex justify-between w-full shadow-xl items-center">
+            <div class=" flex p-10 w-full h-[150px] items-center gap-4 flex ">
+                <h1 class="ml-[10%] text-3xl font-semibold rounded-lg text-gray-300" >FIND SPLASH</h1>
+                <p class="text-[30px] text-gray-300">|</p>
+                <div class="flex flex-col justify-center items-center text-gray-300 text-sm">
+                    <p>
+                        Powered By
+                    </p>
+                    <p>
+                        Unsplash
+                    </p>
+                </div>
+            </div>
+            <div class="w-[10%] h-10 rounded-lg mr-[10%] flex items-center justify-center hover:shadow-3xl">
+                <button class="bg-gray-300 w-full h-full rounded-lg text-gray-800 hover:shadow-3xl">login</button>
+            </div>
             </div>
         </div>
-    
+        <!-- Heading -->
+        <p class="text-2xl ml-[12%] mt-[2%] font-extralight  text-gray-300">Lets find a Masterpiece</p>
+        <div class="w-[80%] ml-[10%] mt-4 h-10 rounded-lg bg-gray-300 flex  justify-between items-center p-4">
+            <div>
+                <i class="fa-solid fa-magnifying-glass text-gray-900  cursor-pointer"></i>
+                <input class="bg-transparent rounded-lg ml-2 m-2 p-1" placeholder="eg city, hill..">
+            </div>
+            <i class="fa-solid fa-xmark cursor-pointer hover:rounded-full hover:shadow-xl"></i>
+        </div>
+        <!-- Images -->
+        <div class="container border border-solid border-black w-[80%] ml-[10%] mt-[1%] flex">
+            <div class="m-2 p-2 w-[20%] h-[300px] border border-solid border-black">
+                asfsa
+            </div>
+        </div>
     </div>
     
 </body>
