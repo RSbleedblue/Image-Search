@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <script  src="https://kit.fontawesome.com/b3348ae33f.js" crossorigin="anonymous"></script>
+    <link rel = "stylesheet" href="style.css">
     <title>Image Search</title>
 </head>
-<body style="background: url('assets/bgMain.jpg'); background-size: cover; background-position: fixed ">
+<body style="background: url('assets/bgMain.jpg'); background-size: cover; background-position: fixed;">
     <div class="flex flex-col items-center justify-center">
         <!-- Nav BaR --> 
         <div class="flex justify-between w-full shadow-xl items-center">
@@ -30,20 +31,24 @@
         </div>
         <!-- Heading -->
         <p class="text-2xl ml-[12%] mt-[2%] font-extralight  text-gray-300">Lets find a Masterpiece</p>
-        <div class="w-[80%] ml-[10%] mt-4 h-10 rounded-lg bg-gray-300 flex  justify-between items-center p-4">
+        <div class="w-[80%] ml-[10%] mt-4 h-10 rounded-lg bg-gray-300 flex  justify-between items-center p-4 shadow-xl">
             <div>
-                <i class="fa-solid fa-magnifying-glass text-gray-900  cursor-pointer"></i>
-                <input class="bg-transparent rounded-lg ml-2 m-2 p-1" placeholder="eg city, hill..">
+                <i class="fa-solid fa-magnifying-glass text-gray-900  cursor-pointer" onclick="getImage()"></i>
+                <input class="bg-transparent rounded-lg ml-2 m-2 p-1" placeholder="eg city, hill.."  id="searchInput">
             </div>
             <i class="fa-solid fa-xmark cursor-pointer hover:rounded-full hover:shadow-xl"></i>
         </div>
         <!-- Images -->
-        <div class="container border border-solid border-black w-[80%] ml-[10%] mt-[1%] flex">
-            <div class="m-2 p-2 w-[20%] h-[300px] border border-solid border-black">
-                asfsa
+        <div class="container  w-[80%] ml-[10%] mt-[1%] flex flex-wrap items-center shadow-xl justify-center rounded-lg" style="background-color: rgba(255, 255, 255, 0.05); " id="imageContainer">
+            <div class="m-2 p-2 w-[250px] h-[300px] relative rounded-xl overflow-hidden shadow-lg hover:cursor-pointer transition ease-in-out delay-250 hover:-translate-y-1 hover:scale-105">
+                <img src="https://images.unsplash.com/photo-1486915309851-b0cc1f8a0084?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0MTg4NjR8MHwxfHNlYXJjaHwyfHxob3R8ZW58MHx8fHwxNzExMDM3NTQ5fDA&ixlib=rb-4.0.3&q=80&w=1080" class="rounded-lg w-full h-full" alt="Image">
+                <!-- Description -->
+                <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-40 w-full z-10 h-20 flex items-center justify-center ">
+                    <p class="text-white text-center">Coal Fire Light up</p>
+                </div>
             </div>
-        </div>
+        </div>        
     </div>
-    
+    <script src="script.js"></script>
 </body>
 </html>
